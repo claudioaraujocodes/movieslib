@@ -1,0 +1,116 @@
+.container .title {
+    color: #fff;
+    font-size: 1.8rem;
+    text-align: center;
+    margin: 3.5rem 0 2rem;
+}
+
+.container .title span {
+    color: #F7D354;
+    font-size: 1.6rem;
+}
+
+
+.title .query-text {
+    color: #F7D354;
+}
+
+.movies-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    gap: 3.33%;
+    padding: 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.movies-container div {
+    width: 30%;
+    color: #fff;
+    margin-bottom: 2.5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: #111;
+    padding: 1rem;
+}
+
+.movies-container div img {
+    max-width: 100%;
+}
+
+.movies-container div img,
+.movies-container div p,
+.movies-container div h2 {
+    margin-bottom: 1rem;
+}
+
+.movies-container div svg {
+    color: #F7D354;
+}
+
+.movies-container div a {
+    background-color: #f7D354;
+    border: 2px solid #f7D354;
+    border-radius: 4px;
+    color: black;
+    padding: 1rem 0.5rem;
+    align-items: center;
+    text-align: center;
+    font-weight: bold;
+    transition: .4s;
+}
+
+.movies-container div a:hover {
+    background-color: transparent;
+    color: #f7D354;
+}
+
+.movie-card h2 {
+    font-size: 1.4rem;
+}
+
+@media (max-width: 600px) {
+
+    .container .title {
+        color: #fff;
+        font-size: 1.7em;
+        text-align: center;
+        margin: 2rem 0 0;
+    }
+
+    .container .title span {
+        color: #F7D354;
+        font-size: 1.4rem;
+    }
+
+    .movie-card h2 {
+        font-size: .8rem;
+    }
+
+    .movies-container {
+        justify-content: space-between;
+        gap: inherit;
+    }
+
+    .movies-container div {
+        width: 49%;
+        margin-bottom: .5rem;
+        padding: .5rem;
+    }
+
+    .movies-container div a {
+        padding: .5rem;
+    }
+
+    .movie-card .star {
+        font-size: .9rem;
+    }
+
+    .movies-container div img,
+    .movies-container div p,
+    .movies-container div h2 {
+        margin-bottom: .5rem;
+    }
+}
